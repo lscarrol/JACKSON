@@ -1,0 +1,122 @@
+type stringArray : 1 -> string : ( "hello" )
+type real2int : ( real: r ) -> integer
+function getInt: real2int {
+   getInt := r2i r;
+}
+
+function initializeIntArray: getIntArray {
+   [ intArray: ia ]
+   reserve ia(2, 2, 2);
+   reserve ia(2,2);
+   reserve ia(1);
+   reserve ia;
+   ia(0, 0) := p00;
+   ia(0, 1) := p01;
+   ia(1, 0) := p10;
+   ia(1, 1) := p11;
+   initializeIntArray := ia;
+}
+
+function sayHello : noInput {
+   sayHello := "Hello!";
+}
+
+{ [ integer: i, x; string: s, s1; real: r, r1, r2; Boolean: b, b1; character: c, c1;
+   record: rec, rec1; intArray: ia, ia1; stringArray: sa ]
+      reserve rec;
+
+   { [ real: x := 2.2 ]
+           for(i := 1 ;; i < 9; i := i + 1;){
+                  x := x - 2 * 10 / 5;
+                  x := (x - 2) * 10 / 5 + (x - 3);
+                  ia := initializeIntArray(1, 2, 3, 4);
+      }
+   }
+
+      switch ( i % 2 )
+      case 1: {
+         c := 'a';
+                  r := i2r i;
+      }
+      case 2: {
+         c := 'b';
+         r := 5.7;
+      }
+      otherwise: {
+         c := 'c';
+         r := 0.0;
+      }
+
+      b := false;
+
+      s := sayHello();
+
+      if ( true | false & b = true )
+   then {
+          rec.i := 15;
+      rec.s := "then";
+   }
+   else {
+          rec.r := 1.5;
+   }
+
+
+     while( !(rec.i isNull) ){
+      rec.i := getInt(rec.r);
+   }
+
+   release rec;
+   release ia;
+}
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
