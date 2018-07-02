@@ -1,7 +1,7 @@
 #include "hashtable.h"
 
 //FUNCTIONS FOR H_MAP
-
+sjfahsasa
 //CREATE
 H_TABLE* createTable() {
     H_TABLE* ma = malloc(sizeof(H_TABLE));
